@@ -11,7 +11,8 @@
     align-items: center;
     overflow: hidden;
 }
-.player{
+
+.player {
     width: 100%;
     height: 90px;
     background-color: #000;
@@ -58,26 +59,106 @@
     font-weight: 700;
     color: rgb(255, 255, 255);
 }
+
 .home section .left nav ul li i {
     font-size: 20px;
 }
 
-.home section .left .library{
+.home section .left .library {
     margin-top: 8px;
     width: 100%;
     height: 521px;
     background: #121212;
     border-radius: 10px;
+    position: relative;
 }
 
-.library-navigatin{
+.home section .left .library .library-navigatin {
     width: 100%;
     height: 104px;
+    position: sticky;
+    top: 0;
+    /* box-shadow: 0 6px 10px rgba(0,0,0,.6); */
+}
 
+.home section .left .library .library-navigatin .navigation-title {
+    width: 100%;
+    height: 50%;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.home section .left .library .library-navigatin .navigation-title .title-left {
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.home section .left .library .library-navigatin .navigation-title .title-right {
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    gap: 20px;
+}
+
+.home section .left .library .library-navigatin .navigation-info {
+    width: 100%;
+    height: 48px;
+    margin: 8px 16px;
+}
+
+.home section .left .library .library-navigatin .navigation-info .nav-filter {
+    padding: 4px 12px;
+    border-radius: 9999px;
+    background-color:#FFFFFF12;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #fff;
 }
 
 
 
+.home section .left .library .library-list {
+    width: 100%;
+    height: 100%;
+}
+.home section .left .library .library-list header{
+    width: 100%;
+    padding: 2px 4px 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home section .left .library .library-list header .search-btn{
+    padding: 4px 8px;
+    margin: 4px 8px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.home section .left .library .library-list header .resent-btn{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 4px 8px;
+    margin: 4px 8px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
 
 
 
@@ -85,12 +166,10 @@
 /* right ===============================*/
 
 
-.home section .right{
+.home section .right {
     width: 1092px;
     height: 200vh;
     overflow: scroll;
     background-color: #121212;
     border-radius: 10px;
 }
-
-
