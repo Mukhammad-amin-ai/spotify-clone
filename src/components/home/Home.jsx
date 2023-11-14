@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import './home.css'
 import Collapse from '../../assets/svg-elements/Collapse'
+import HomeSvg from '../../assets/svg-elements/HomeSvg'
+import Search from '../../assets/svg-elements/Search'
 
 
 export default function Home() {
@@ -12,14 +14,14 @@ export default function Home() {
                         <nav>
                             <ul>
                                 <Link to={'/'}>
-                                    <li>
-                                        <i className="fa-solid fa-house"></i>
+                                    <li style={{ color: '#fff' }}>
+                                        <HomeSvg />
                                         Home
                                     </li>
                                 </Link>
                                 <Link to={'/search'}>
                                     <li>
-                                        <i className="fa-solid fa-magnifying-glass"></i>
+                                        <Search />
                                         Search
                                     </li>
                                 </Link>

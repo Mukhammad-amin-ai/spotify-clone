@@ -53,11 +53,11 @@
     display: flex;
     gap: 20px;
     align-items: center;
-    font-family: sans-serif;
+    font-family:CircularSp-Book, sans-serif;
     font-size: 16px;
     line-height: normal;
     font-weight: 700;
-    color: rgb(255, 255, 255);
+    color: #B3B3B3;
 }
 
 .home section .left nav ul li i {
@@ -95,8 +95,8 @@
     padding: 4px 8px;
     display: flex;
     align-items: center;
-    gap: 20px;
-    font-family: sans-serif;
+    gap: 15px;
+    font-family: CircularSp-Book ,sans-serif;
     font-size: 16px;
     line-height: normal;
     font-weight: 700;
@@ -142,7 +142,7 @@
     border-radius: 9999px;
     background-color: #FFFFFF12;
     font-size: 14px;
-    font-family: sans-serif;
+    font-family:CircularSp-Book, sans-serif;
     color: #fff;
 }
 
