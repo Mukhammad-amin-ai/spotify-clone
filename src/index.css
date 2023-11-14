@@ -6,7 +6,7 @@
     list-style: none;
 }
 
-
+/* ============SCROLBAR========================== */
 ::-webkit-scrollbar {
     width: 15px;
 }
@@ -23,7 +23,66 @@
     background: #555;
 }
 
-.icon{
-    width: 24px;
-    height: 24px;
+/* ============SCROLBAR========================== */
+/* ============fONTS========================== */
+@font-face {
+    font-family: 'CircularSp-Black';
+    src: url('./assets/fonts/CircularStd-Black.otf') format('opentype');
 }
+
+@font-face {
+    font-family: 'CircularSp-Black-italic';
+    src: url('./assets/fonts/CircularStd-BlackItalic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'CircularSp-Bold';
+    src: url('./assets/fonts/CircularStd-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'CircularSp-Bold-italic';
+    src: url('./assets/fonts/CircularStd-BoldItalic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'CircularSp-Book';
+    src: url('./assets/fonts/CircularStd-Book.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'CircularSp-Book-italic';
+    src: url('./assets/fonts/CircularStd-BookItalic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'CircularSp-Light';
+    src: url('./assets/fonts/CircularStd-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'CircularSp-Light-italic';
+    src: url('./assets/fonts/CircularStd-Light\ Italic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'CircularSp-Medium';
+    src: url('./assets/fonts/CircularStd-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'CircularSp-Medium-italic';
+    src: url('./assets/fonts/CircularStd-MediumItalic.otf') format('opentype');
+}
+
+
+
+
+
+
+
+/* ============fONTS========================== */
+
+
+
+/* ================================== */

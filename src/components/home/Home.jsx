@@ -35,8 +35,12 @@ export default function Home() {
                                         Your Library
                                     </div>
                                     <div className="title-right">
-                                        <i className="fa-solid fa-plus"></i>
-                                        <i className="fa-solid fa-arrow-right"></i>
+                                        <button className='plus'>
+                                            <i className="fa-solid fa-plus"></i>
+                                        </button>
+                                        <button className='rightBtn'>
+                                            <i className="fa-solid fa-arrow-right"></i>
+                                        </button>
                                     </div>
                                 </div>
                                 <div className="navigation-info">
