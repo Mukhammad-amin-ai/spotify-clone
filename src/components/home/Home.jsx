@@ -3,9 +3,16 @@ import './home.css'
 import Collapse from '../../assets/svg-elements/Collapse'
 import HomeSvg from '../../assets/svg-elements/HomeSvg'
 import Search from '../../assets/svg-elements/Search'
-
+import { useDispatch } from 'react-redux'
+import { FetchFromPlaylist } from '../../store/Modules/LibraryList'
+import { useEffect } from 'react'
 
 export default function Home() {
+    const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(FetchFromPlaylist())
+    }, [dispatch]);
+
     return (
         <>
             <main className='home'>
@@ -54,7 +61,7 @@ export default function Home() {
                             <div className="library-list">
                                 <header>
                                     <button className='search-btn'>
-                                        <Search kengligi={'16px'}/>
+                                        <Search kengligi={'16px'} />
                                     </button>
                                     <button className='resent-btn'>
                                         Recents
@@ -64,44 +71,13 @@ export default function Home() {
                                 <ul>
                                     <li>
                                         <div className="list">
-                                            <div className="list-image"></div>
-                                            <div className="list-text"></div>
-                                        </div>
-                                    </li>
-                                     <li>
-                                        <div className="list">
-                                            <div className="list-image"></div>
-                                            <div className="list-text"></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="list">
-                                            <div className="list-image"></div>
-                                            <div className="list-text"></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="list">
-                                            <div className="list-image"></div>
-                                            <div className="list-text"></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="list">
-                                            <div className="list-image"></div>
-                                            <div className="list-text"></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="list">
-                                            <div className="list-image"></div>
-                                            <div className="list-text"></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="list">
-                                            <div className="list-image"></div>
-                                            <div className="list-text"></div>
+                                            <div className="list-image">
+                                                <img src="https://mosaic.scdn.co/640/ab67616d00001e0260de03184044e5f69745802fab67616d00001e02a96efbf231ca824132bfd2fcab67616d00001e02e2232dff518054d6ddab86aeab67616d00001e02f71666f55aad8ccabbb81a14" alt="" />
+                                            </div>
+                                            <div className="list-text">
+                                                <h3>My Playlist</h3>
+                                                <p>Playlist • Stalker</p>
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
