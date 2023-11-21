@@ -71,6 +71,8 @@
     background: #121212;
     border-radius: 10px;
     position: relative;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .home section .left .library .library-navigatin {
@@ -78,7 +80,8 @@
     height: 104px;
     position: sticky;
     top: 0;
-    /* box-shadow: 0 6px 10px rgba(0,0,0,.6); */
+    background-color: #121212;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .6);
 }
 
 .home section .left .library .library-navigatin .navigation-title {
@@ -150,6 +153,7 @@
 .home section .left .library .library-list {
     width: 100%;
     height: 100%;
+
 }
 
 .home section .left .library .library-list header {
@@ -185,10 +189,12 @@
     cursor: pointer;
 }
 
+
 .home section .left .library .library-list ul {
     width: 100%;
     height: auto;
 }
+
 
 .home section .left .library .library-list ul li {
     width: 100%;
@@ -202,6 +208,8 @@
     width: 100%;
     height: 100%;
     padding: 4px 8px;
+    background-color: aqua;
+
 }
 
 .home section .left .library .library-list ul li .list:hover {
@@ -209,7 +217,7 @@
     border-radius: 7px;
 }
 
-.home section .left .library .library-list ul li .list .list-image{
+.home section .left .library .library-list ul li .list .list-image {
     width: 48px;
     height: 48px;
     border-radius: 7px;

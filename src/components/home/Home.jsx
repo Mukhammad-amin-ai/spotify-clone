@@ -68,6 +68,42 @@ export default function Home() {
                                             <div className="list-text"></div>
                                         </div>
                                     </li>
+                                     <li>
+                                        <div className="list">
+                                            <div className="list-image"></div>
+                                            <div className="list-text"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="list">
+                                            <div className="list-image"></div>
+                                            <div className="list-text"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="list">
+                                            <div className="list-image"></div>
+                                            <div className="list-text"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="list">
+                                            <div className="list-image"></div>
+                                            <div className="list-text"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="list">
+                                            <div className="list-image"></div>
+                                            <div className="list-text"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="list">
+                                            <div className="list-image"></div>
+                                            <div className="list-text"></div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
