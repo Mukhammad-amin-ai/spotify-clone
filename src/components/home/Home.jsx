@@ -21,7 +21,7 @@ export default function Home() {
                                 </Link>
                                 <Link to={'/search'}>
                                     <li>
-                                        <Search />
+                                        <Search kengligi={'20px'} />
                                         Search
                                     </li>
                                 </Link>
@@ -54,13 +54,21 @@ export default function Home() {
                             <div className="library-list">
                                 <header>
                                     <button className='search-btn'>
-                                        <i className="fa-solid fa-magnifying-glass"></i>
+                                        <Search kengligi={'16px'}/>
                                     </button>
                                     <button className='resent-btn'>
                                         Recents
                                         <i className="fa-solid fa-list-ul"></i>
                                     </button>
                                 </header>
+                                <ul>
+                                    <li>
+                                        <div className="list">
+                                            <div className="list-image"></div>
+                                            <div className="list-text"></div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>

@@ -53,7 +53,7 @@
     display: flex;
     gap: 20px;
     align-items: center;
-    font-family:CircularSp-Book, sans-serif;
+    font-family: CircularSp-Book, sans-serif;
     font-size: 16px;
     line-height: normal;
     font-weight: 700;
@@ -96,7 +96,7 @@
     display: flex;
     align-items: center;
     gap: 15px;
-    font-family: CircularSp-Book ,sans-serif;
+    font-family: CircularSp-Book, sans-serif;
     font-size: 16px;
     line-height: normal;
     font-weight: 700;
@@ -142,11 +142,10 @@
     border-radius: 9999px;
     background-color: #FFFFFF12;
     font-size: 14px;
-    font-family:CircularSp-Book, sans-serif;
+    font-family: CircularSp-Book, sans-serif;
     color: #fff;
+    cursor: pointer;
 }
-
-
 
 .home section .left .library .library-list {
     width: 100%;
@@ -168,8 +167,8 @@
     border: none;
     color: #fff;
     font-size: 16px;
+    cursor: pointer;
 }
-
 
 
 
@@ -183,8 +182,38 @@
     display: flex;
     gap: 10px;
     align-items: center;
+    cursor: pointer;
 }
 
+.home section .left .library .library-list ul {
+    width: 100%;
+    height: auto;
+}
+
+.home section .left .library .library-list ul li {
+    width: 100%;
+    height: 64px;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+
+.home section .left .library .library-list ul li .list {
+    width: 100%;
+    height: 100%;
+    padding: 4px 8px;
+}
+
+.home section .left .library .library-list ul li .list:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 7px;
+}
+
+.home section .left .library .library-list ul li .list .list-image{
+    width: 48px;
+    height: 48px;
+    border-radius: 7px;
+}
 
 
 
