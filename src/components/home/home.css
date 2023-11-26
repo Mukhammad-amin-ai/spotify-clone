@@ -1,300 +1,335 @@
 /* maybe problem with (vh) */
 
 .home {
-    width: 100vw;
-    max-width: 100%;
-    height: 100vh;
-    max-height: 100%;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  max-height: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
-
-.player {
-    width: 100%;
-    height: 90px;
-    background-color: #000;
-    position: fixed;
-    bottom: 0;
-
-}
-
 .home section {
-    width: 99%;
-    height: 98%;
-    display: flex;
-    justify-content: space-between;
+  width: 99%;
+  height: 98%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .home section .left {
-    width: 420px;
-    height: 100%;
+  width: 420px;
+  height: 100%;
 }
 
 .home section .left nav {
-    width: 100%;
-    height: 112px;
-    background: #121212;
-    border-radius: 10px;
+  width: 100%;
+  height: 112px;
+  background: #121212;
+  border-radius: 10px;
 }
 
 .home section .left nav ul {
-    width: 100%;
-    height: 100%;
-    padding: 8px 12px;
+  width: 100%;
+  height: 100%;
+  padding: 8px 12px;
 }
 
 .home section .left nav ul li {
-    width: 100%;
-    height: 50%;
-    padding: 4px 12px;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    font-family: CircularSp-Book, sans-serif;
-    font-size: 16px;
-    line-height: normal;
-    font-weight: 700;
-    color: #B3B3B3;
+  width: 100%;
+  height: 50%;
+  padding: 4px 12px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-family: CircularSp-Book, sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 700;
+  color: #b3b3b3;
 }
 
 .home section .left nav ul li i {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .home section .left .library {
-    margin-top: 8px;
-    width: 100%;
-    height: 521px;
-    background: #121212;
-    border-radius: 10px;
-    position: relative;
-    overflow: auto;
-    overflow-x: hidden;
+  margin-top: 8px;
+  width: 100%;
+  height: 521px;
+  background: #121212;
+  border-radius: 10px;
+  position: relative;
+  overflow: auto;
+  overflow-x: hidden;
 }
-
-
 
 /* ===========scroll======================== */
 .home section .left .library .library-navigatin {
-    width: 100%;
-    height: 104px;
-    position: sticky;
-    top: 0;
-    background-color: #121212;
-    /* box-shadow: 0 6px 10px rgba(0, 0, 0, .6); */
+  width: 100%;
+  height: 104px;
+  position: sticky;
+  top: 0;
+  background-color: #121212;
+  /* box-shadow: 0 6px 10px rgba(0, 0, 0, .6); */
 }
 
 /* =================================================== */
 
 .home section .left .library .library-navigatin .navigation-title {
-    width: 100%;
-    height: 50%;
-    padding: 8px 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+  width: 100%;
+  height: 50%;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .home section .left .library .library-navigatin .navigation-title .title-left {
-    padding: 4px 8px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    font-family: CircularSp-Book, sans-serif;
-    font-size: 16px;
-    line-height: normal;
-    font-weight: 700;
-    color: #B3B3B3;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: CircularSp-Book, sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 700;
+  color: #b3b3b3;
 }
 
 .home section .left .library .library-navigatin .navigation-title .title-right {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
-.home section .left .library .library-navigatin .navigation-title .title-right .plus {
-    width: 32px;
-    height: 32px;
-    border-radius: 99px;
-    font-size: 20px;
-    color: #B3B3B3;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-
+.home
+  section
+  .left
+  .library
+  .library-navigatin
+  .navigation-title
+  .title-right
+  .plus {
+  width: 32px;
+  height: 32px;
+  border-radius: 99px;
+  font-size: 20px;
+  color: #b3b3b3;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-.home section .left .library .library-navigatin .navigation-title .title-right .rightBtn {
-    width: 32px;
-    height: 32px;
-    border-radius: 99px;
-    font-size: 20px;
-    color: #B3B3B3;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+.home
+  section
+  .left
+  .library
+  .library-navigatin
+  .navigation-title
+  .title-right
+  .rightBtn {
+  width: 32px;
+  height: 32px;
+  border-radius: 99px;
+  font-size: 20px;
+  color: #b3b3b3;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .home section .left .library .library-navigatin .navigation-info {
-    width: 100%;
-    height: 48px;
-    margin: 8px 16px;
+  width: 100%;
+  height: 48px;
+  margin: 8px 16px;
 }
 
 .home section .left .library .library-navigatin .navigation-info .nav-filter {
-    padding: 4px 12px;
-    border-radius: 9999px;
-    background-color: #FFFFFF12;
-    font-size: 14px;
-    font-family: CircularSp-Book, sans-serif;
-    color: #fff;
-    cursor: pointer;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background-color: #ffffff12;
+  font-size: 14px;
+  font-family: CircularSp-Book, sans-serif;
+  color: #fff;
+  cursor: pointer;
 }
 
 .home section .left .library .library-list {
-    width: 100%;
-    height: auto;
-    /* overflow: scroll; */
+  width: 100%;
+  height: auto;
+  /* overflow: scroll; */
 }
-
-/* =================================================== */
-
-/* .home section .left .library .library-list::-webkit-scrollbar {
-    width: 15px !important;
-}
-
-.home section .left .library .library-list::-webkit-scrollbar-track {
-    background: #000000 !important;
-}
-
-.home section .left .library .library-list::-webkit-scrollbar-thumb {
-    background: #888 !important;
-}
-
-.home section .left .library .library-list::-webkit-scrollbar-thumb:hover {
-    background: #555 !important;
-} */
-/* =================================================== */
-
 
 .home section .left .library .library-list header {
-    width: 100%;
-    padding: 2px 4px 0 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  padding: 2px 4px 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .home section .left .library .library-list header .search-btn {
-    padding: 4px 8px;
-    margin: 4px 8px;
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
+  padding: 4px 8px;
+  margin: 4px 8px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
 }
-
-
 
 .home section .left .library .library-list header .resent-btn {
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-size: 16px;
-    padding: 4px 8px;
-    margin: 4px 8px;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 4px 8px;
+  margin: 4px 8px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
 }
-
 
 .home section .left .library .library-list ul {
-    width: 100%;
-    height: auto;
-
+  width: 100%;
+  height: auto;
 }
-
 
 .home section .left .library .library-list ul li {
-    width: 100%;
-    height: 64px;
-    cursor: pointer;
-    padding: 4px 8px;
+  width: 100%;
+  height: 64px;
+  cursor: pointer;
+  padding: 4px 8px;
 }
 
-
 .home section .left .library .library-list ul li .list {
-    width: 100%;
-    height: 100%;
-    padding: 4px 8px;
-    display: flex;
-    gap: 5px;
+  width: 100%;
+  height: 100%;
+  padding: 4px 8px;
+  display: flex;
+  gap: 5px;
 }
 
 .home section .left .library .library-list ul li .list:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
 }
 
 .home section .left .library .library-list ul li .list .list-image {
-    width: 48px;
-    height: 48px;
-    border-radius: 7px;
+  width: 48px;
+  height: 48px;
+  border-radius: 7px;
 }
 
 .home section .left .library .library-list ul li .list .list-image img {
-    width: 100%;
-    padding: 3px;
+  width: 100%;
+  padding: 3px;
 }
 
 .home section .left .library .library-list ul li .list .list-text {
-    width: auto;
-    height: 100%;
-    padding: 4px 8px;
-
+  width: auto;
+  height: 100%;
+  padding: 4px 8px;
 }
 
 .home section .left .library .library-list ul li .list .list-text h3 {
-    font-size: 16px;
-    font-weight: 400;
-    font-family:  CircularSp-Bold, sans-serif;
-    color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: CircularSp-Bold, sans-serif;
+  color: #fff;
 }
 
 .home section .left .library .library-list ul li .list .list-text p {
-    font-size: 14px;
-    font-weight: 400;
-    padding-top: 3px;
-    font-family:  CircularSp-Bold, sans-serif;
-    color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 3px;
+  font-family: CircularSp-Bold, sans-serif;
+  color: rgba(255, 255, 255, 0.5);
 }
-
-
 
 /* right ===============================*/
-
-
 .home section .right {
-    width: 1092px;
-    height: 200vh;
-    overflow: scroll;
-    background-color: #121212;
-    border-radius: 10px;
+  width: 1092px;
+  height: auto;
+  border-radius: 10px;
+  background: linear-gradient(to right bottom, #212121, #121212);
+  /* overflow: auto; */
 }
 
+/* Audio-Player ===============================*/
+.home .player {
+  width: 100%;
+  height: 90px;
+  background-color: #000;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.home .player .player-cover {
+  width: 98%;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home .player .player-cover .player-content {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .player .player-cover .player-content .player-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.home .player .player-cover .player-content .player-img img {
+  width: 100%;
+}
+.home .player .player-cover .player-content .player-text {
+  width: 128px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home
+  .player
+  .player-cover
+  .player-content
+  .player-text
+  .player-description
+  h5 {
+  font-family: CircularSp-Book, sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+.home .player .player-cover .player-content .player-text .player-description p {
+  font-family: CircularSp-Bold, sans-serif;
+  color: #b3b3b3;
+  font-size: 11px;
+}
+
+.home .player .player-cover .player-content .likeBtn {
+  width: 15px;
+  height: 15px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
 
 /* =======Media============= */
-@media screen and (max-width:1220px) {
-    .home section .right {
-        width: 743px;
-
-    }
+@media screen and (max-width: 1220px) {
+  .home section .right {
+    width: 743px;
+  }
 }

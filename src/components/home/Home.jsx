@@ -3,11 +3,15 @@ import './home.css'
 import Collapse from '../../assets/svg-elements/Collapse'
 import HomeSvg from '../../assets/svg-elements/HomeSvg'
 import Search from '../../assets/svg-elements/Search'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { FetchFromPlaylist } from '../../store/Modules/LibraryList'
 import { useEffect } from 'react'
+import LikeBtn from '../../assets/svg-elements/LikeBtn'
+
+
 
 export default function Home() {
+    let playlist = useSelector((state) => state.playlist.playlists)
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(FetchFromPlaylist())
@@ -54,7 +58,7 @@ export default function Home() {
                                 </div>
                                 <div className="navigation-info">
                                     <span className='nav-filter'>
-                                        Artist
+                                        Playlists
                                     </span>
                                 </div>
                             </div>
@@ -69,27 +73,66 @@ export default function Home() {
                                     </button>
                                 </header>
                                 <ul>
-                                    <li>
+                                    <li >
                                         <div className="list">
                                             <div className="list-image">
-                                                <img src="https://mosaic.scdn.co/640/ab67616d00001e0260de03184044e5f69745802fab67616d00001e02a96efbf231ca824132bfd2fcab67616d00001e02e2232dff518054d6ddab86aeab67616d00001e02f71666f55aad8ccabbb81a14" alt="" />
+                                                <img src='' alt="" />
                                             </div>
                                             <div className="list-text">
-                                                <h3>My Playlist</h3>
+                                                <h3></h3>
                                                 <p>Playlist • Stalker</p>
                                             </div>
                                         </div>
                                     </li>
+                                    {/* {
+                                        playlist?.map((item, index) => (
+
+                                            <li key={index}>
+                                                <div className="list">
+                                                    <div className="list-image">
+                                                        <img src={item.images[0].url} alt="" />
+                                                    </div>
+                                                    <div className="list-text">
+                                                        <h3>{item.name}</h3>
+                                                        <p>Playlist • {item.owner.display_name}</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        ))
+                                    }  */}
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div className="right"></div>
+                    <div className="right">
+                        <header>
+                            <div className="left-header">
+
+                            </div>
+                            <div className="right-header"></div>
+                        </header>
+
+                    </div>
                 </section>
                 <div className="player">
-
+                    <div className="player-cover">
+                        <div className="player-content">
+                            <div className="player-img">
+                                <img src="https://i.scdn.co/image/ab67616d00004851a7717523c2f13a93b89b8886" alt="olayer-image" />
+                            </div>
+                            <div className="player-text">
+                                <div className="player-description">
+                                    <h5>Там ревели горы</h5>
+                                    <p>Miyagi & Andy Panda</p>
+                                </div>
+                            </div>
+                            <button className="likeBtn">
+                                <LikeBtn />
+                            </button>
+                        </div>
+                    </div>
                 </div>
-            </main>
+            </main >
         </>
     )
 }
