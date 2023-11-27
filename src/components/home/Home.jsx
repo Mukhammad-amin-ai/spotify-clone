@@ -4,7 +4,7 @@ import Collapse from '../../assets/svg-elements/Collapse'
 import HomeSvg from '../../assets/svg-elements/HomeSvg'
 import Search from '../../assets/svg-elements/Search'
 import { useDispatch, useSelector } from 'react-redux'
-import { FetchFromPlaylist } from '../../store/Modules/LibraryList'
+// import { FetchFromPlaylist } from '../../store/Modules/LibraryList'
 import { useEffect } from 'react'
 import LikeBtn from '../../assets/svg-elements/LikeBtn'
 
@@ -14,7 +14,8 @@ export default function Home() {
     let playlist = useSelector((state) => state.playlist.playlists)
     const dispatch = useDispatch()
     useEffect(() => {
-        dispatch(FetchFromPlaylist())
+        // dispatch(FetchFromPlaylist())
+        console.log(playlist);
     }, [dispatch]);
 
     return (
@@ -73,13 +74,13 @@ export default function Home() {
                                     </button>
                                 </header>
                                 <ul>
-                                    <li >
+                                    <li>
                                         <div className="list">
                                             <div className="list-image">
-                                                <img src='' alt="" />
+                                                <img src='https://mosaic.scdn.co/60/ab67616d00001e0260de03184044e5f69745802fab67616d00001e02a96efbf231ca824132bfd2fcab67616d00001e02e2232dff518054d6ddab86aeab67616d00001e02f71666f55aad8ccabbb81a14' alt="playlistImage" />
                                             </div>
                                             <div className="list-text">
-                                                <h3></h3>
+                                                <h3>Мои треки Shazam</h3>
                                                 <p>Playlist • Stalker</p>
                                             </div>
                                         </div>
@@ -111,7 +112,6 @@ export default function Home() {
                             </div>
                             <div className="right-header"></div>
                         </header>
-
                     </div>
                 </section>
                 <div className="player">
