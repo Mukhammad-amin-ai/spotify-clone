@@ -4,9 +4,14 @@ import Collapse from '../../assets/svg-elements/Collapse'
 import HomeSvg from '../../assets/svg-elements/HomeSvg'
 import Search from '../../assets/svg-elements/Search'
 import { useDispatch, useSelector } from 'react-redux'
-// import { FetchFromPlaylist } from '../../store/Modules/LibraryList'
 import { useEffect } from 'react'
 import LikeBtn from '../../assets/svg-elements/LikeBtn'
+import RandomBtn from '../../assets/svg-elements/RandomBtn'
+import Preious from '../../assets/svg-elements/Previous'
+import PlayBtn from '../../assets/svg-elements/PlayBtn'
+import NextBtn from "../../assets/svg-elements/NextBtn"
+import ReapedBtn from '../../assets/svg-elements/ReapedBtn'
+// import { FetchFromPlaylist } from '../../store/Modules/LibraryList'
 
 
 
@@ -129,6 +134,31 @@ export default function Home() {
                             <button className="likeBtn">
                                 <LikeBtn />
                             </button>
+                        </div>
+                        <div className="player-controller">
+                            <div className="control-btns">
+                                <button>
+                                    <RandomBtn />
+                                </button>
+                                <button>
+                                    <Preious />
+                                </button>
+                                <button>
+                                    <PlayBtn />
+                                </button>
+                                <button>
+                                    <NextBtn />
+                                </button>
+                                <button>
+                                    <ReapedBtn />
+                                </button>
+                            </div>
+                            <div className="progress">
+
+                            </div>
+                        </div>
+                        <div className="player-configure">
+
                         </div>
                     </div>
                 </div>
