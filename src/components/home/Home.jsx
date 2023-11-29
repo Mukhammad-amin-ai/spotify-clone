@@ -4,7 +4,7 @@ import Collapse from '../../assets/svg-elements/Collapse'
 import HomeSvg from '../../assets/svg-elements/HomeSvg'
 import Search from '../../assets/svg-elements/Search'
 import { useDispatch, useSelector } from 'react-redux'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import LikeBtn from '../../assets/svg-elements/LikeBtn'
 import RandomBtn from '../../assets/svg-elements/RandomBtn'
 import Preious from '../../assets/svg-elements/Previous'
@@ -17,11 +17,30 @@ import ReapedBtn from '../../assets/svg-elements/ReapedBtn'
 
 export default function Home() {
     let playlist = useSelector((state) => state.playlist.playlists)
+    const [hover, setHover] = useState('hsla(0,0%,100%,.7)')
+    const [random, setRandom] = useState('hsla(0,0%,100%,.7)')
+    const [play, setPlay] = useState('hsla(0,0%,100%,.7)')
+    const [next, setNext] = useState('hsla(0,0%,100%,.7)')
+    const [reaped, setReped] = useState('hsla(0,0%,100%,.7)')
     const dispatch = useDispatch()
+
+
     useEffect(() => {
         // dispatch(FetchFromPlaylist())
         console.log(playlist);
     }, [dispatch]);
+
+
+    let mauserOver = () => setHover('#fff')
+    let mauseLeave = () => setHover('hsla(0,0%,100%,.7)')
+    let randomFunc = () => setRandom('#fff')
+    let randomLeave = () => setRandom('hsla(0,0%,100%,.7)')
+    let playFunc = () => setPlay('scale(1.1)')
+    let playLeve = () => setPlay('none')
+    let nextFunc = () => setNext('#fff')
+    let nextLeave = () => setNext('hsla(0,0%,100%,.7)')
+    let reapedFunc = () => setReped('#fff')
+    let reapedLeave = () => setReped('hsla(0,0%,100%,.7)')
 
     return (
         <>
@@ -137,20 +156,20 @@ export default function Home() {
                         </div>
                         <div className="player-controller">
                             <div className="control-btns">
-                                <button>
-                                    <RandomBtn />
+                                <button onMouseOver={randomFunc} onMouseLeave={randomLeave}>
+                                    <RandomBtn random={random} />
                                 </button>
-                                <button>
-                                    <Preious />
+                                <button onMouseOver={mauserOver} onMouseLeave={mauseLeave} >
+                                    <Preious hover2={hover} />
                                 </button>
-                                <button>
-                                    <PlayBtn />
+                                <button onMouseOver={playFunc} onMouseLeave={playLeve} style={{ transform: play }}>
+                                    <PlayBtn play={play} />
                                 </button>
-                                <button>
-                                    <NextBtn />
+                                <button onMouseOver={nextFunc} onMouseLeave={nextLeave}>
+                                    <NextBtn next={next} />
                                 </button>
-                                <button>
-                                    <ReapedBtn />
+                                <button onMouseOver={reapedFunc} onMouseLeave={reapedLeave}>
+                                    <ReapedBtn reaped={reaped} />
                                 </button>
                             </div>
                             <div className="progress">

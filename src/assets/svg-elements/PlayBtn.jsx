@@ -1,8 +1,8 @@
 
-export default function PlayBtn() {
+export default function PlayBtn({ play }) {
     return (
         <div>
-            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" className="Svg-sc-ytk21e-0 kPpCsU" style={{ width: '16px', height: '16px' }}>
+            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" className="Svg-sc-ytk21e-0 kPpCsU" style={{ width: '16px', height: '16px', transform: play }}>
                 <path d="M3 1.713a.7.7 0 0 1 1.05-.607l10.89 6.288a.7.7 0 0 1 0 1.212L4.05 14.894A.7.7 0 0 1 3 14.288V1.713z"></path>
             </svg>
         </div>

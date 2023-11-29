@@ -339,13 +339,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 .home .player .player-cover .player-controller .control-btns button{
   width: 16px;
   height: 16px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 .home .player .player-cover .player-controller .control-btns button:nth-child(3){
   width: 32px;
@@ -355,6 +356,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 /* player-configure====================== */
